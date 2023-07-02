@@ -17,7 +17,7 @@ export const Trends = () => {
   }, [])
 
   const handleTrendClick = (id: string) => {
-    navigate(`/trend/${id}`)
+    navigate(`/trend`)
   };
 
   return (

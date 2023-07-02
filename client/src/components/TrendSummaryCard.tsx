@@ -7,13 +7,10 @@ import {
   CardActions,
 } from '@mui/material';
 
+import { ITrend } from 'types';
+
 interface ITrendSummaryCardProps {
-  trend: {
-    id: string;
-    name: string;
-    type: string;
-    description: string;
-  };
+  trend: ITrend;
   onClick: (id: string) => void;
 }
 export const TrendSummaryCard: FC<ITrendSummaryCardProps> = ({
@@ -24,7 +21,7 @@ export const TrendSummaryCard: FC<ITrendSummaryCardProps> = ({
     <Card elevation={6}>
       <CardContent>
         <Typography variant="h5" color="text.primary">
-          {trend.name ? trend.name : '???'}
+          {trend.name && '???'}
         </Typography>
         <Typography sx={{ mb: 2 }} color="text.secondary">
           {trend.type ? trend.type : '???'}

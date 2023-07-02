@@ -53,14 +53,20 @@ You will required to to polish the app by performing some of the following tasks
 
 <br />
 
-### Task 1 - Styling & Layout
+### Task 1 - Git
 - Create and checkout a new branch with that follows the following convention `task/BSDTEST_<your-name-and-lastname-in-snake-case>`
 
 <br />
 
-### Task 2 - Styling & Layout
+### Task 2 - Styling & Layout (First Screen)
 - Update the `client` styles to achieve the below layout. Each item being rendered should have a fixed width of 275px. The final solution should be responsive. 
 ![alt](./media/responsive-1.png)
+
+<br />
+
+### Task 3 - Bug Fixes (First Screen)
+- 3.1 Find and fix the bug causing the trend name not to display
+- 3.2 Figure out why the view button is not taking the user to the next screen and fix it.
 
 <br />
 

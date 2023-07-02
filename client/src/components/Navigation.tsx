@@ -11,7 +11,8 @@ export const Navigation: React.FC = () => {
     navigate(-1);
   };
 
-  const isHomeRoute = location.pathname === '/';
+  const isHomeRoute =
+    location.pathname === '/' || location.pathname === '/trend';
 
   return (
     <Box sx={{ flexGrow: 1 }}>
