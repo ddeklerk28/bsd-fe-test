@@ -70,6 +70,18 @@ You will required to to polish the app by performing some of the following tasks
 
 <br />
 
+### Task 4 - Styling & Layout (Second Screen)
+- 4.1 Center the card along the vertical as well as the horizontal axis as indicated by the image below:
+![alt](./media/centered.png)
+
+<br />
+
+### Task 5 - Feature Implementation (Second Screen)
+- 5.1 Create an api integration layer function called fetchTrend, that will fetch the data of single trend. See the API documentation for reference.
+- 5.2 Use the new function to provide the second screen with data
+
+<br />
+
 ---
 <br />
 

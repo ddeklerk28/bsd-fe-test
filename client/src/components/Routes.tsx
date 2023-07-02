@@ -21,7 +21,7 @@ export const AppRoutes = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" index element={<Trends />} />
-          <Route path="/trend" index element={<Trends />} />
+          <Route path="/trend" element={<Trends />} />
           <Route path="/trend/:id" element={<TrendDetails />} />
         </Routes>
       </Suspense>
