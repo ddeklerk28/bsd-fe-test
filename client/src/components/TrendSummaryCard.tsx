@@ -21,7 +21,7 @@ export const TrendSummaryCard: FC<ITrendSummaryCardProps> = ({
   onClick,
 }) => {
   return (
-    <Card sx={{ width: 275 }} elevation={6}>
+    <Card elevation={6}>
       <CardContent>
         <Typography variant="h5" color="text.primary">
           {trend.name ? trend.name : '???'}

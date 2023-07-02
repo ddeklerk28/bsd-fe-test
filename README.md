@@ -22,12 +22,12 @@ To run Trend Spotter on your local machine, please follow the instructions below
 1. Clone the repository from GitHub:
 
 ```bash
-git clone git@github.com:ddeklerk28/trend-spotter.git
+git clone git@github.com:ddeklerk28/bsd-fe-test.git
 ```
 2.  Install dependencies:
 
 ```bash
-cd trend-spotter
+cd bsd-fe-test
 npm istall
 
 ```
@@ -50,6 +50,17 @@ You will required to to polish the app by performing some of the following tasks
 - **Bug fixes**
 - **Styling & Layout**
 - **Feature Implementation**
+
+<br />
+
+### Task 1 - Styling & Layout
+- Create and checkout a new branch with that follows the following convention `task/BSDTEST_<your-name-and-lastname-in-snake-case>`
+
+<br />
+
+### Task 2 - Styling & Layout
+- Update the `client` styles to achieve the below layout. Each item being rendered should have a fixed width of 275px. The final solution should be responsive. 
+![alt](./media/responsive-1.png)
 
 <br />
 

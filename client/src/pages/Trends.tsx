@@ -32,9 +32,5 @@ export const Trends = () => {
 };
 
 const TrendContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexFlow: 'row wrap',
-  gap: theme.spacing(2),
-  justifyContent: 'center',
-  padding: theme.spacing(2),
+  // styles
 }));
