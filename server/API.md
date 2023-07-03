@@ -7,7 +7,7 @@ This document provides an overview of the endpoints available in the Trend Spott
 
 Retrieves all trends from the database
 
-- **URL**: `http://localhost:3001/api/trends`
+- **URL**: `http://localhost:3001/api/trend`
 - **Response (200)**:
 ```javascript
 { data: ITrend[] }
@@ -18,7 +18,7 @@ Retrieves all trends from the database
 
 Retrieves a specific trend from the database based on its ID.
 
-- **URL**: `http://localhost:3001/api/trends/:id`
+- **URL**: `http://localhost:3001/api/trend/:id`
 - **Parameters**:
     - `id` - The ID of the trend
 
@@ -32,7 +32,7 @@ Retrieves a specific trend from the database based on its ID.
 
 Creates a new trend.
 
-- **URL**: `http://localhost:3001/api/trends`
+- **URL**: `http://localhost:3001/api/trend`
 - **Body**:
 ```
 {
@@ -50,7 +50,7 @@ Creates a new trend.
 
 Updates an existing trend.
 
-- **URL**: `http://localhost:3001/api/trends/:id`
+- **URL**: `http://localhost:3001/api/trend/:id`
 - **Parameters**:
     - `id` - The ID of the trend to update.
 - **Body**:
@@ -72,7 +72,7 @@ Updates an existing trend.
 
 Deletes a trend based on its ID.
 
-- **URL**: `http://localhost:3001/api/trends/:id`
+- **URL**: `http://localhost:3001/api/trend/:id`
 - **Parameters**:
     - `id` - The ID of the trend to delete.
 - **Response (200):**
