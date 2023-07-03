@@ -25,7 +25,7 @@ git clone git@github.com:ddeklerk28/bsd-fe-test.git
 
 ```bash
 cd bsd-fe-test
-npm istall
+npm install
 
 ```
 
