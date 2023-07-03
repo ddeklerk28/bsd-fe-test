@@ -71,5 +71,10 @@ Recommended time allocation:
 
 ---
 
+## 4. Caveats
+### 4.1 Consuming API data
+- Since the API uses the convention of wrapping response data in an object such as `{ data: objectToBeAccessed }`, and the fact that axios
+also wraps its data from the BE in a similar fashion. The actual response from the BE looks like `{ response: { data: { data: objectToBeAccessed } } }`
+
 ## 3. Further Documentation
 - [API Documentation](./server/API.md)
