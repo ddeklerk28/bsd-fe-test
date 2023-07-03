@@ -11,14 +11,7 @@ export const api = (() => {
     return data;
   };
 
-  const fetchTrend = async (id: string) => {
-    const { data } = await instance.get(`/trend/${id}`);
-
-    return data;
-  };
-
   return {
     fetchTrends,
-    fetchTrend,
   };
 })();

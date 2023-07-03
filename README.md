@@ -77,7 +77,7 @@ You will required to to polish the app by performing some of the following tasks
 <br />
 
 ### Task 5 - Feature Implementation (Second Screen)
-- 5.1 Create an api integration layer function called fetchTrend, that will fetch the data of single trend. See the API documentation for reference.
+- 5.1 Create an api service layer function called `fetchTrend`, that will fetch the data of single trend. See the API documentation for reference.
 - 5.2 Use the new function to provide the second screen with data
 
 <br />
