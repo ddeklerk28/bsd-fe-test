@@ -1,5 +1,6 @@
 import { Router, Request, Response, NextFunction } from "express";
 import { db } from "../db";
+import { ITrend } from "../types";
 
 const router = Router();
 
@@ -58,7 +59,7 @@ router.put("/trend/:id", (req, res, next) => {
     const trend = db.updateTrend({
       id: req.params.id,
       ...req.body,
-    });
+    } as ITrend);
 
     res.status(200);
     res.json({ data: trend });
