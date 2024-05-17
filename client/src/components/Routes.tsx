@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 
 import { Routes, Route } from 'react-router-dom';
-import { TrendDetails } from '../pages/TrendDetails';
 
 const Trends = lazy(() =>
   import('../pages/Trends').then((module) => ({
@@ -9,7 +8,7 @@ const Trends = lazy(() =>
   })),
 );
 
-const Trend = lazy(() =>
+const TrendDetails = lazy(() =>
   import('../pages/TrendDetails').then((module) => ({
     default: module.TrendDetails,
   })),
