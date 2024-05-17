@@ -45,7 +45,7 @@ Recommended time allocation:
 - 2 SP: 5 - 7 minutes
 - 3 SP: 7 - 12 minutes
 >### Task 1: Git Workflow (1 SP)
->Create and checkout a new branch with that follows the following convention `task/BSDTEST_<your-name-and-lastname-in-snake-case>`
+>Create and checkout a new branch with that follows the following convention `task/BSDTEST_<your-name-and-lastname-in-kebab-case>`
 
 >### Task 2: Bug fix - Trends Screen (1 SP)
 >Find and fix the bug causing the trend name not to display
