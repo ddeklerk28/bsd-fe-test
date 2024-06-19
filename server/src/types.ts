@@ -11,6 +11,6 @@ export type IDBInstance = {
     getTrends: () => ITrend[];
     getTrend: (id: string) => ITrend;
     createTrend: (trend: ITrend) => ITrend;
-    updateTrend: (trend: ITrend) => ITrend;
+    updateTrend: (trend: Partial<ITrend>) => ITrend;
     deleteTrend: (id: string) => ITrend;
 }

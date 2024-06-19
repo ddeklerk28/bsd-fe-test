@@ -19,4 +19,10 @@ export default [
     type: "brand",
     description: 'A carbonated non-alcoholic drink.'
   },
+  {
+    id: "4",
+    name: "Milk",
+    type: "brand",
+    description: 'A cold cup of milk.'
+  },
 ] as ITrend[];

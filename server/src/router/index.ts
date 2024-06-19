@@ -52,14 +52,14 @@ router.post("/trend", (req, res, next) => {
  * Update an existing trend.
  * @route PUT /trends/:id
  * @param {string} id.path.required - The ID of the trend to update.
- * @param {ITrend} trend.body.required - The updated trend object.
+ * @param {Partial<ITrend>} trend.body.required - The updated trend object.
  */
 router.put("/trend/:id", (req, res, next) => {
   try {
     const trend = db.updateTrend({
       id: req.params.id,
       ...req.body,
-    } as ITrend);
+    } as Partial<ITrend>);
 
     res.status(200);
     res.json({ data: trend });

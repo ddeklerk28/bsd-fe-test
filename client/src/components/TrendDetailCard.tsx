@@ -1,23 +1,60 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import {
   Typography,
   Card,
   CardContent,
   CardActions,
+  Button,
+  Input,
+  Box,
 } from '@mui/material';
 import { ITrend } from 'types';
 
 export interface ITrendDetailCardProps {
   trend?: ITrend;
+  onEdit: (newName: string) => void;
 }
 
-export const TrendDetailCard: FC<ITrendDetailCardProps> = ({ trend }) => {
+export const TrendDetailCard: FC<ITrendDetailCardProps> = ({ trend, onEdit }) => {
+  const [showInput, setShowInput] = useState<boolean>(false);
+  const [newName, setNewName] = useState<string>(trend?.name || '');
+
   return (
     <Card sx={{ width: 600 }} elevation={6}>
       <CardContent>
-        <Typography variant="h3" color="text.primary">
-          {trend?.name || '???'}
-        </Typography>
+        {showInput ? (
+          <Box>
+            <Input
+              placeholder="Enter trend name"
+              value={newName}
+              onChange={(e) => setNewName(e.target.value)}
+            />
+            <Button
+              onClick={() => {
+                onEdit(newName);
+                setShowInput(false);
+              }}
+            >
+              Save
+            </Button>
+            <Button
+              onClick={() => {
+                setShowInput(false);
+                setNewName(trend?.name || '');
+              }}
+            >
+              Cancel
+            </Button>
+          </Box>
+        ) : (
+          <Typography
+            variant="h3"
+            color="text.primary"
+            onClick={() => setShowInput(true)}
+          >
+            {trend?.name || '???'}
+          </Typography>
+        )}
         <Typography variant="h5" sx={{ mb: 2 }} color="text.secondary">
           {trend?.type || '???'}
         </Typography>

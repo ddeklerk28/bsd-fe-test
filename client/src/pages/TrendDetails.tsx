@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, styled } from '@mui/material';
 import { TrendDetailCard } from '../components/TrendDetailCard';
@@ -6,13 +6,25 @@ import { TrendDetailCard } from '../components/TrendDetailCard';
 import { api } from '../api';
 
 export const TrendDetails = () => {
-  const [trend, setTrend] = useState<any>(undefined);
+  const [trend, setTrend] = useState<any>();
 
   const params = useParams();
 
+  useEffect(() => {
+    api.fetchTrend('3').then((response) => {
+      setTrend(response.data);
+    });
+  }, []);
+
+  const handleEdit = (newName: string) => {
+    api.updateTrend('3', { name: newName }).then((response) => {
+      setTrend(response.data);
+    });
+  };
+
   return (
     <TrendDetailsContainer>
-      <TrendDetailCard trend={trend} />
+      <TrendDetailCard trend={trend} onEdit={handleEdit}/>
     </TrendDetailsContainer>
   );
 };

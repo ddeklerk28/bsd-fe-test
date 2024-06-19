@@ -52,11 +52,11 @@ export const db: IDBInstance = (() => {
 
   /**
    * Updates an existing trend in the database.
-   * @param {ITrend} trend - The updated trend object.
+   * @param {Partial<ITrend>} trend - The updated trend object.
    * @returns {ITrend} The updated trend object.
    * @throws {Error} Throws an error if the trend with the specified ID does not exist.
    */
-  const updateTrend = (trend: ITrend): ITrend => {
+  const updateTrend = (trend: Partial<ITrend>): ITrend => {
     let updatedTrend: ITrend | undefined = undefined;
 
     trends = trends.map((_trend) => {
