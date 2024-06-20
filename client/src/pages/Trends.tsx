@@ -17,7 +17,7 @@ export const Trends = () => {
   }, [])
 
   const handleTrendClick = (id: string) => {
-    navigate('/trends?id=')
+    navigate(`/trends?id=`)
   };
 
   return (
@@ -33,16 +33,7 @@ export const Trends = () => {
 
 const TrendContainer = styled(Box)(({ theme }) => ({
   // styles
-  display: 'grid',
-  width: '100%',
-  maxWidth: 566,
-  gap: theme.spacing(2),
-  margin: '32px auto',
-  gridTemplateColumns: 'auto auto',
-  alignItems: 'center',
-  justifyContent: 'center',
-
   [theme.breakpoints.down("sm")]: {
-    gridTemplateColumns: 'auto',
+    // styles
   },
 }));

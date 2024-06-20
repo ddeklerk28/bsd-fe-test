@@ -18,16 +18,8 @@ export const api = (() => {
     return data;
   };
 
-  const updateTrend = async (id: string, update: Partial<ITrend>): Promise<{ data: ITrend }> => {
-    const { data } = await instance.put(`/trend/${id}`, update);
-
-    return data;
-  };
-
-
   return {
     fetchTrends,
     fetchTrend,
-    updateTrend,
   };
 })();

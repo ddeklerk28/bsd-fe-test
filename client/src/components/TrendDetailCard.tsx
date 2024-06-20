@@ -11,8 +11,8 @@ import {
 import { ITrend } from 'types';
 
 export interface ITrendDetailCardProps {
-  trend?: ITrend;
-  onEdit: (newName: string) => void;
+  trend: ITrend;
+  onEdit: (id: string, newName: string) => void;
 }
 
 export const TrendDetailCard: FC<ITrendDetailCardProps> = ({ trend, onEdit }) => {
@@ -31,7 +31,7 @@ export const TrendDetailCard: FC<ITrendDetailCardProps> = ({ trend, onEdit }) =>
             />
             <Button
               onClick={() => {
-                onEdit(newName);
+                onEdit(trend.id, newName);
                 setShowInput(false);
               }}
             >
@@ -50,6 +50,7 @@ export const TrendDetailCard: FC<ITrendDetailCardProps> = ({ trend, onEdit }) =>
           <Typography
             variant="h3"
             color="text.primary"
+            sx={{ cursor: 'pointer' }}
             onClick={() => setShowInput(true)}
           >
             {trend?.name || '???'}

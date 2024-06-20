@@ -45,7 +45,7 @@ Recommended time allocation:
 - 2 SP: 5 - 7 minutes
 - 3 SP: 7 - 12 minutes
 >### Task 1: Git Workflow (1 SP)
->Create and checkout a new branch with that follows the following convention `task/BSDTEST_<your-name-and-lastname-in-snake-case>`
+>Create and checkout a new branch from `2024-update` branch that follows the following convention `task/BSDTEST_<your-name-and-lastname-in-snake-case>`
 
 >### Task 2: Bug fix - Trends Screen (1 SP)
 >Find and fix the bug causing the trend name not to display
@@ -55,6 +55,7 @@ Recommended time allocation:
 >
 > 
 >![alt](./media/responsive-1.png)
+>![alt](./media/responsive-2.png)
 
 >### Task 4: Bug Fix - Trends Screen (2 SP)
 >Figure out why the view button is not taking the user to the Trend Details screen and fix it.
@@ -66,8 +67,8 @@ Recommended time allocation:
 >![alt](./media/centered.png)
 
 >### Task 6: Integration - Trend Details Screen (3 SP)
->- Create an api service layer function called `fetchTrend`, that will fetch the data of single trend. See the API documentation for reference.
->- Use the new function to provide the second screen with data
+>- Create an api service layer function called `updateTrend`, that will update the data of single trend. See the API documentation for reference.
+>- Use the new function rename one of the trends by clicking on its title
 
 ---
 
